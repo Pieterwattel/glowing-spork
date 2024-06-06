@@ -32,7 +32,7 @@ body {
 
 /* end standard selectors */
 
-body {
+.allbutfooter {
     display: flex;
     flex-direction: column;
     flex: 1;
@@ -44,12 +44,33 @@ h3 {
     margin:0;
 }
 
+img {
+    box-sizing: border-box;
+}
+
 .content > *,
 .header,
 .footer {
     padding-left: 15%;
     padding-right: 15%;
 }
+
+.section > * {
+    margin-top: px;
+    margin-bottom: 10px;
+}
+
+.contentbox > * {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.item {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
 
 .header {
     display: flex;
@@ -67,28 +88,73 @@ h3 {
 }
 
 .section {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .section.one{
     background-color: rgb(0, 0, 218);
+    display: flex;
+    flex: 1;
+    flex-basis: 1;
+}
+
+#img1 {
+    margin-left: 10px;
+    background-color: grey;
+}
+
+.section.one > * {
+    width:50%;
 }
 
 .section.two{
     background-color: rgb(71, 83, 255);
 }
 
+.imagerow {
+    display: flex;
+    flex: 1;
+    gap:4%
+}
+
+.imagerow span >* {
+    height: auto;
+    width: 100%
+}
+
+.imagerow .item {
+    border: 2px solid rgb(138, 237, 255);
+    border-radius: 0.5em;
+}
+
 .section.three{
     background-color: rgb(106, 140, 255);
+}
+
+.quote {
+    margin-left: 10%;
+}
+
+.quotename {
+    text-align: right;
+    margin-top: 10px;
 }
 
 .section.four{
     background-color: rgb(140, 167, 255);
 }
 
-.footer {
+#bottombutton {
+    
+}
 
+.footer {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
     text-align: center;
     background-color: rgb(173, 202, 255);
 }
