@@ -29,6 +29,9 @@ body {
     outline: 2px solid red;
 }
 
+* {
+    font-size: 18px;
+}
 
 /* end standard selectors */
 
@@ -41,13 +44,32 @@ body{
     display: flex;
     flex-direction: column;
     flex: 1;
-    margin-top: 80px;
+    margin-top: 60px;
 }
 
 h1,
 h2,
 h3 {
     margin:0;
+}
+
+h1{
+    font-weight: 800;
+    color: #f9faf8;
+    font-size: 48px;
+}
+
+h2 {
+    color: #1F2937; 
+    font-size: 36px;
+    font-weight: 800;
+   
+}
+
+h3 {
+    font-weight: 600;
+    color: #f9faf8;
+    font-size: 30px;
 }
 
 img {
@@ -90,7 +112,7 @@ img {
     top: 0;
     display: flex;
     flex: 1;
-    min-height: 80px;
+    min-height: 60px;
     align-items: center;
     background-color: #1f2937;
     padding-top: 10px;
@@ -111,16 +133,9 @@ img {
     margin-left: auto;
 }
 
-
-h3 {
-    font-weight: 800;
-    color: #f9faf8;
-    font-size: 48px;
-}
-
 .section {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .section.one{
@@ -128,6 +143,11 @@ h3 {
     display: flex;
     flex: 1;
     flex-basis: 1;
+}
+
+.one .contentbox {
+    font-size: 18px;
+    color: #E5E7EB;
 }
 
 .section.one > * {
@@ -138,7 +158,12 @@ h3 {
     background-color: rgb(71, 83, 255);
 }
 
+.two > * {
+    text-align: center;
+}
+
 .imagerow {
+    margin-top: 1.5%;
     display: flex;
     flex: 1;
     gap:4%
@@ -173,6 +198,12 @@ h3 {
 
 #bottombutton {
     
+}
+
+button{
+    background-color: #3882f6;
+    border-radius: 0.4em;
+    color: #E5E7EB;
 }
 
 .footer {
