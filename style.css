@@ -32,10 +32,16 @@ body {
 
 /* end standard selectors */
 
+body{
+ width: 100%;
+ border: 1px;
+}
+
 .allbutfooter {
     display: flex;
     flex-direction: column;
     flex: 1;
+    margin-top: 50px;
 }
 
 h1,
@@ -55,9 +61,13 @@ img {
     padding-right: 15%;
 }
 
-.section > * {
-    margin-top: px;
+.section > * {;
     margin-bottom: 10px;
+}
+
+.contentbox {
+    margin-top: 10px;
+    border: 1px;
 }
 
 .contentbox > * {
@@ -70,21 +80,28 @@ img {
     margin-bottom: 10px;
 }
 
-
+.section.one .item {
+    margin-left: 2%;
+}
 
 .header {
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
     display: flex;
     flex: 1;
-    height: 30px;
-    justify-content: space-between;
+    height: 50px ;
     align-items: center;
     background-color: rgb(0, 0, 153);
     padding-top: 10px;
     padding-bottom: 10px;
+    width: 100%;
 }
 
-.header .links > * {
-    margin: 10px;
+.header .links {
+    margin-left: auto;
+    display: flex;
+    gap: 15px
 }
 
 .section {
@@ -97,11 +114,6 @@ img {
     display: flex;
     flex: 1;
     flex-basis: 1;
-}
-
-#img1 {
-    margin-left: 10px;
-    background-color: grey;
 }
 
 .section.one > * {
