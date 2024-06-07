@@ -104,6 +104,8 @@ img {
 
 .section.one .item {
     margin-left: 2%;
+    height: 280px;
+    width: auto;
 }
 
 .header {
@@ -143,6 +145,7 @@ img {
     display: flex;
     flex: 1;
     flex-basis: 1;
+    max-height: 500px;
 }
 
 .one .contentbox {
@@ -175,7 +178,7 @@ img {
 }
 
 .imagerow .item {
-    border: 2px solid rgb(138, 237, 255);
+    border: 2px solid #3882f6;
     border-radius: 0.5em;
 }
 
