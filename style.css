@@ -212,7 +212,7 @@ img {
     border: 1;
     align-items: center;
     gap: 2%;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .section.four .calltext {
@@ -232,14 +232,19 @@ button{
     border-radius: 0.4em;
     color: #E5E7EB;
     font-size: 17px;
+    border: none;
+    border: 1px solid #E5E7EB;
+    width: 80px;
 }
 
 .footer {
     margin: 0;
-    padding: 0;
+    padding: 20px;
     width: 100%;
     position: fixed;
     bottom: 0;
     text-align: center;
-    background-color: rgb(173, 202, 255);
+
+    background-color: #1f2937;
+    color: #E5E7EB;
 }
