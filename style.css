@@ -251,3 +251,25 @@ button{
     background-color: #1f2937;
     color: #E5E7EB;
 }
+
+ /* Dynamic HSL Rainbow Animation */
+  @keyframes dynamic-rainbow {
+    0% {
+      background-color: hsl(0, 100%, 50%);
+    }
+    50% {
+      background-color: hsl(180, 100%, 50%);
+    }
+    100% {
+      background-color: hsl(360, 100%, 50%);
+    }
+  }
+  
+  .rainbow {
+    animation: dynamic-rainbow 5s linear infinite; /* Increased duration */
+  
+    /* Cross-Browser Compatibility */
+    -webkit-animation: dynamic-rainbow 5s linear infinite;
+    -moz-animation: dynamic-rainbow 5s linear infinite;
+    -o-animation: dynamic-rainbow 5s linear infinite;
+  }
